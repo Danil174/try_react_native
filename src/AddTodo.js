@@ -20,6 +20,8 @@ export const AddTodo = ({ onSubmit }) => {
                 onChangeText={setValue}
                 value={value}
                 placeholder="Введите название дела"
+                autoCorrect={false}
+                autoCapitalize='none'
             />
             <Button 
                 title={'Добавить'} 
@@ -33,7 +35,8 @@ const styles = StyleSheet.create({
     block: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        alignItems: 'center'
+        alignItems: 'center',
+        paddingBottom: 10
     },
     input: {
         width: '70%',
